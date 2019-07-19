@@ -1,0 +1,14 @@
+
+/* main */
+.project {
+    background-color: rgb(224, 224, 224);
+    box-shadow: 1px 1px 1rem black;
+    width: 20vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.project__title {
+    letter-spacing: .2rem;
+}
