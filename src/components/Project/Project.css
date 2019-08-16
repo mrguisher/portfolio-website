@@ -13,7 +13,7 @@
     letter-spacing: .2rem;
 }
 .project__description {
-    
+    color: rgb(134, 134, 134);
 }
 .project__img-container {
     display: grid;
@@ -25,13 +25,13 @@
     justify-content: center;
 }
 .project__image {
-    height: 70%;
+    height: 85%;
 }
 .project__image-left {
     justify-self: flex-end;
 }
 .project__image-center {
-    height: 80%;
+    height: 105%;
     justify-self: center;
     align-self:   center;
 }
