@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 
+import github from './../../assets/github.svg'
+import linkedin from './../../assets/linkedin2.svg'
+
+
 class Navigation extends Component{
 
 
@@ -8,8 +12,10 @@ class Navigation extends Component{
     return (
      <div className="top-bar">
           <div className="socials">
-               <div className="socials-item">in</div>
-               <div className="socials-item">gitHub</div>
+               <a href="https://github.com/mrguisher" className="socials-item"><img src={github} alt="github-link" /></a>
+               <a href="https://www.linkedin.com/in/mateuszpeciak/" className="socials-item"><img src={linkedin} alt="linkedin-link" /></a>
+               
+               <a href="#" className="socials-item">Curriculum Vitae</a>
           </div>
           <nav className="navigation">
                <ul className="navigation__list">
