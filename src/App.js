@@ -6,9 +6,7 @@ import Navigation from './components/Navigation/Navigation';
 import AboutMe from './components/AboutMe/AboutMe';
 
 function App() {
-  
   return (
-
     <Fragment>
     <Navigation></Navigation>
       <div className="main-wrapper">
@@ -17,9 +15,6 @@ function App() {
         <AboutMe></AboutMe>
       </div>
     </Fragment>
-    
-    
-
   );
 }
 export default App;

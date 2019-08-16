@@ -15,3 +15,8 @@ h3 {
 .main-wrapper {
   z-index: 1;
 }
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
