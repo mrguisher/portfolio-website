@@ -9,7 +9,7 @@ class HomePage extends Component{
 
   render() {
     return (
-      <div className="main">
+      <div className="main" id={this.props.id}>
         
        
         <header className="main__header">
