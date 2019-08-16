@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import './Navigation.css';
 
+import { BrowserRouter as Router } from "react-router-dom";
+// import { HashLink as Link } from 'react-router-hash-link';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 import github from './../../assets/github.svg'
 import linkedin from './../../assets/linkedin2.svg'
 
@@ -19,9 +23,14 @@ class Navigation extends Component{
           </div>
           <nav className="navigation">
                <ul className="navigation__list">
-                    <li className="navigation__item">home</li>
-                    <li className="navigation__item">portfolio</li>
-                    <li className="navigation__item">about & contact</li>
+               <Router>
+                    <NavLink smooth to="/#home" activeClassName="selected" className="navigation__item">home</NavLink>
+                    <NavLink smooth to="/#portfolio" activeClassName="selected" className="navigation__item">portfolio</NavLink>
+                    <NavLink smooth to="/#contact" activeClassName="selected" className="navigation__item">about & contact</NavLink>
+                    {/* <NavLink >home</NavLink>
+                    <NavLink className="navigation__item">portfolio</NavLink>
+                    <NavLink className="navigation__item">about & contact</NavLink> */}
+               </Router>
                </ul>
           </nav>
      </div>
