@@ -4,6 +4,25 @@
     background-color: rgb(248, 247, 239);
     width: 100vw;
     height: 60vh;
+    display: grid;
+    grid-template-columns: 40% 30% 15%;
+    grid-column-gap: 2rem;
+    align-content: center;
+    justify-items: center;
+}
+.center-box {
+    color: rgb(66, 66, 66);
+    align-self: center;
+}
+.about__text-line {
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+}
+.about__heading {
+    margin-bottom: 1rem;
+}
+.about__bold {
+    font-weight: 600;
 }
 .about__photo {
     height: 120%;
@@ -15,4 +34,11 @@
     overflow: hidden;
     border: solid 2px rgb(228, 228, 228);
     box-shadow: 1px 5px 10px 2px rgb(219, 219, 219)
+}
+.about__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
