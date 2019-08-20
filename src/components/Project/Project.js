@@ -10,7 +10,7 @@ class Project extends Component{
 
   render() {
     return (
-      <ScrollAnimation animateIn="fadeIn" animateOut='fadeOut'>
+      <ScrollAnimation  animateOnce="true" animateIn="fadeIn" animateOut='fadeOut' duration={.7}>
       <div className="project">
         <div className="project__img-container">
           <img src={this.props.imageLeft} alt={this.props.alt} className="project__image project__image-left"/>
@@ -21,8 +21,8 @@ class Project extends Component{
         <h3 className="project__title">{this.props.title}</h3>
         <p className="project__description">{this.props.description}</p>
         <div className="btn-container">
-          <ButtonCta className="btn btn-primary">Watch demo</ButtonCta>
-          <ButtonCta className="btn btn-secondary">Show on Github</ButtonCta>
+          <a target="_blank" href={this.props.websiteUrl}><ButtonCta className="btn btn-primary">Watch demo</ButtonCta></a>
+          <a target="_blank" href={this.props.githubUrl}><ButtonCta className="btn btn-secondary">Show on Github</ButtonCta></a>
         </div>
       </div>
       </ScrollAnimation>
