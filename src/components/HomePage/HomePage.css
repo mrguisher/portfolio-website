@@ -55,3 +55,25 @@
     opacity: 1;
     animation: CodeLinePulse 1s infinite;
 }
+@media only screen and (max-width: 900px) {
+    .main__header {
+        top: 60%;
+        right: 52%;
+    }
+    .main__heading-sub {
+        font-size: 1rem;
+    }
+    .main__heading-sub::after,
+    .main__heading-sub::before {
+        content: "1";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        color: rgb(121, 121, 121);
+        left: -2rem;
+    }
+    .main__heading-sub::before {
+        content: "2";
+        bottom: -2rem;
+    }
+}
