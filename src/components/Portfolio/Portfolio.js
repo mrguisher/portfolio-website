@@ -2,44 +2,64 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 import Project from '../Project/Project';
 
-import weatherCenter1 from './img/weather-app/weather1.png';
-import weatherCenter2 from './img/weather-app/weather2.png';
-import weatherCenter3 from './img/weather-app/weather3.png';
+import weather1 from './img/weather-app/weather1.png';
+import weather2 from './img/weather-app/weather2.png';
+import weather3 from './img/weather-app/weather3.png';
+
+import blog1 from './img/blog/blog1.png';
+import blog2 from './img/blog/blog2.png';
+import blog3 from './img/blog/blog3.png';
+
+import turnTimer1 from './img/turn-timer/turn-timer1.png';
+import turnTimer2 from './img/turn-timer/turn-timer2.png';
+import turnTimer3 from './img/turn-timer/turn-timer3.png';
 
 class Portfolio extends Component{
 
 
   render() {
     return (
-      <div className="portfolio">
+      <div className="portfolio" id={this.props.id}>
         <Project
-          imageLeft={weatherCenter3} 
-          imageCenter={weatherCenter1}
-          imageRight={weatherCenter2}
+          imageLeft={turnTimer2}
+          imageCenter={turnTimer1}
+          imageRight={turnTimer3}
           title="turn-timer"
-          description="krótki opis projektu - short project description"
+          description="Timer application for board games, made with Angular, backend based on Cloud Firestore to perform CRUD operations. This app is designed with the mobile-first approach and responsive to screen size."
+          descriptionBold="Environment: Angular, Sass, Firebase, Angular material, angularfire2"
+          websiteUrl={`${process.env.PUBLIC_URL}/turn-timer`}
+          githubUrl="https://github.com/mrguisher/turn-timer"
         ></Project>
         <Project
-          imageBack=""
-          imageCenter=""
-          imageFront=""
+          imageLeft={weather3}
+          imageCenter={weather1}
+          imageRight={weather2}
+          alt="weather-app img"
           title="weather app"
-          description="krótki opis projektu - short project description"
+          description="A weather forecast application made with React, fetch data from openewathermap.com API"
+          descriptionBold="Environment: React, REST Api"
+          githubUrl="https://github.com/mrguisher/weather-app"
+          websiteUrl={`${process.env.PUBLIC_URL}/weather-app`}
         ></Project>
         <Project
-          imageBack=""
-          imageCenter=""
-          imageFront=""
+          imageLeft={blog2}
+          imageCenter={blog1}
+          imageRight={blog3}
           title="e-commerce blogsite"
-          description="krótki opis projektu - short project description"
+          description="A e-commerce specialist blog site based on WordPress, connected to MailChimp with custom contact and subscribe form, fully responsive thanks to a media query mixin manager."
+          descriptionBold="Environment: Sass, BEM, ES6, WordPress."
+          githubUrl="https://github.com/mrguisher/jakpozyskacklienta_pl"
+          websiteUrl={`${process.env.PUBLIC_URL}/e-commerce-blogsite`}
         ></Project>
-        <Project
-          imageBack=""
+        {/* <Project
+          imageLeft=""
           imageCenter=""
-          imageFront=""
+          imageRight=""
           title="music band website"
           description="krótki opis projektu - short project description"
-        ></Project>
+          githubUrl="https://github.com/mrguisher/music-band-website"
+          websiteUrl={`${process.env.PUBLIC_URL}/music-bank-website`}
+        ></Project> */}
         
       </div>
     );
