@@ -19,7 +19,6 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-
 }
 .main__header {
     position: absolute;
@@ -27,9 +26,11 @@
     right: 50%;
     transform: translate(50%, -50%);
     font-weight: 100;
+    max-width: 50%;
 }
 .main__heading-primary {
     margin-bottom: 2rem;
+    max-width: min-content;
 }
 .main__heading-sub {
     font-size: 1.2rem;
@@ -77,5 +78,15 @@
     .main__heading-sub::before {
         content: "2";
         bottom: -2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main__header {
+        right: unset;
+        left: -20%;
+        min-width: 70vw;
+    }
+    .main__heading-sub {
+        font-size: 1rem;
     }
 }
