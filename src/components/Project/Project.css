@@ -2,40 +2,85 @@
 .project {
     background-color: rgb(255, 255, 255);
     box-shadow: -2px -1px 1rem rgba(0, 0, 0, 0.226);
-    height: 90vh;
+    min-height: 90vh;
     display: grid;
-    grid-template-rows: 8fr 1fr 2fr 2fr;
+    grid-template-rows: 6fr 1fr 3fr 1fr;
     grid-row-gap: 2rem;
-    margin: 6rem 12rem;
-    text-align: center;
+    max-width: 60vw;
+    justify-items: center;
+    margin-bottom: 6rem;
+    padding-top: 2rem;
+    overflow: hidden;
 }
 .project__title {
     letter-spacing: .2rem;
+    text-align: center;
+    max-width: 90%;
 }
 .project__description {
     color: rgb(134, 134, 134);
+    max-width: 80%;
+    text-align: left;
+    line-height: 1.4rem;
+}
+.project__description-bold {
+    font-weight: 600;
+    margin-top: 1rem;
+    display: block;
 }
 .project__img-container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 30% 20% 30%;
     background-color: rgb(253, 253, 253);
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
 }
 .project__image {
-    height: 85%;
+    height: 90%;
 }
 .project__image-left {
     justify-self: flex-end;
 }
 .project__image-center {
-    height: 105%;
+    height: 102%;
     justify-self: center;
     align-self:   center;
 }
-
 .btn-container {
-    align-self: flex-start;
+    align-self: start;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 900px) {
+    .btn-container {
+        margin-bottom: 2rem;
+    }
+    .project {
+        padding-top: 0;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .btn-container {
+        display: flex;
+    }
+    .project__img-container {
+        height: 15rem;
+    }
+    .project {
+        max-width: 70vw;
+        grid-template-rows: unset;
+        grid-row-gap: 1rem;
+        padding-bottom: 2rem;
+    }
+    .project__description {
+        padding-bottom: 2rem;
+    }   
+}
+@media only screen and (max-width: 600px) {
+    .project {
+        min-width: 88vw;
+    }
 }

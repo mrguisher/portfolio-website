@@ -17,12 +17,14 @@ class Project extends Component{
           <img src={this.props.imageCenter} alt={this.props.alt} className="project__image-center project__image"/>
           <img src={this.props.imageRight} alt={this.props.alt} className="project__image"/>
         </div>
-      
         <h3 className="project__title">{this.props.title}</h3>
-        <p className="project__description">{this.props.description}</p>
+        <p className="project__description">{this.props.description}
+          <span className="project__description-bold">Environment:</span>
+          {this.props.descriptionBold}
+        </p>
         <div className="btn-container">
-          <a target="_blank" href={this.props.websiteUrl}><ButtonCta className="btn btn-primary">Watch demo</ButtonCta></a>
-          <a target="_blank" href={this.props.githubUrl}><ButtonCta className="btn btn-secondary">Show on Github</ButtonCta></a>
+          <a target="_blank" rel="noopener noreferrer" href={this.props.websiteUrl}><ButtonCta className="btn btn-primary">Watch demo</ButtonCta></a>
+          <a target="_blank" rel="noopener noreferrer" href={this.props.githubUrl}><ButtonCta className="btn btn-secondary">Show on Github</ButtonCta></a>
         </div>
       </div>
       </ScrollAnimation>
