@@ -30,39 +30,13 @@ class Navigation extends Component{
           }
      }
 
-
-
-
-     componentDidMount() {
- 
-          window.addEventListener('scroll', function(e) {
-               // console.log(window.location.hash);
-
-               // let position = window.pageYOffset;
-
-               // if (position > 0 && position <= 600) {
-               //      this.checkPage("#home");
-               // } else if(position > 600 && position < 3800) {
-               //      this.checkPage("#portfolio")
-               // } else if (position > 3800){
-               //      this.checkPage("#contact")
-               // }
-
-               // console.warn(window.pageYOffset);
-               // console.log(e)
-          })
-     }
-
      activeLink = () => {
           this.setState({});
           this.mobileMenuToggle();
-          console.log(document.location.hash)
      }
 
      mobileMenuToggle = () => {
           this.state.mobileMenuStatus === "off" ? this.setState({mobileMenuStatus: "on"}) : this.setState({mobileMenuStatus: "off"})
-          console.log('działa');
-
      }
 
   render() { 
@@ -74,7 +48,7 @@ class Navigation extends Component{
                <div className="socials">
                     <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrguisher"><img className="socials-item" src={github} alt="github-link" /></a>
                     <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mateuszpeciak/"><img className="socials-item" src={linkedin} alt="linkedin-link" /></a>
-                    <a target="_blank" rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}assets/CV_Mateusz_Pęciak.pdf`}  className="socials-item">Curriculum Vitae</a>
+                    <a target="_blank" rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}assets/CV_Mateusz_Peciak.pdf`}  className="socials-item cv">Curriculum Vitae</a>
                </div>
                <nav className="navigation">
                     <ul className="navigation__list">

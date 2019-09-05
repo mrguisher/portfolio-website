@@ -26,7 +26,7 @@ class Portfolio extends Component{
           imageRight={turnTimer3}
           title="turn-timer"
           description="Timer application for board games, made with Angular, backend based on Cloud Firestore to perform CRUD operations. This app is designed with the mobile-first approach and responsive to screen size."
-          descriptionBold="Environment: Angular, Sass, Firebase, Angular material, angularfire2"
+          descriptionBold="Angular 7, Sass, Firebase, Angular material"
           websiteUrl={`${process.env.PUBLIC_URL}/turn-timer`}
           githubUrl="https://github.com/mrguisher/turn-timer"
         ></Project>
@@ -36,8 +36,8 @@ class Portfolio extends Component{
           imageRight={weather2}
           alt="weather-app img"
           title="weather app"
-          description="A weather forecast application made with React, fetch data from openewathermap.com API"
-          descriptionBold="Environment: React, REST Api"
+          description="A weather forecast application made with React, fetch data from OpenWeatherMap API"
+          descriptionBold="React 16, Fetch Api"
           githubUrl="https://github.com/mrguisher/weather-app"
           websiteUrl={`${process.env.PUBLIC_URL}/weather-app`}
         ></Project>
@@ -46,8 +46,8 @@ class Portfolio extends Component{
           imageCenter={blog1}
           imageRight={blog3}
           title="e-commerce blogsite"
-          description="A e-commerce specialist blog site based on WordPress, connected to MailChimp with custom contact and subscribe form, fully responsive thanks to a media query mixin manager."
-          descriptionBold="Environment: Sass, BEM, ES6, WordPress."
+          description="An e-commerce specialist blog site based on WordPress, connected to MailChimp with custom contact and subscribe form, fully responsive with a media query mixin manager."
+          descriptionBold="Sass, BEM methodology, JavaScript (ES6), WordPress, NPM."
           githubUrl="https://github.com/mrguisher/jakpozyskacklienta_pl"
           websiteUrl={`${process.env.PUBLIC_URL}/e-commerce-blogsite`}
         ></Project>

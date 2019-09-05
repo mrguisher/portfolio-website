@@ -13,7 +13,7 @@ class AboutMe extends Component{
   render() {
     return (
       <React.Fragment>
-      <div className="about" id={this.props.id}>
+      <footer className="about" id={this.props.id}>
         <div className="about__photo-rounded">
           <img src={photo} alt="" className="about__photo"/>
         </div>
@@ -24,11 +24,11 @@ class AboutMe extends Component{
           <ScrollAnimation animateOnce="true" animateIn="fadeIn" delay={1000}><p className="about__text-line">feel free to contact me at <span className="about__bold">mrpeciak@gmail.com</span> </p></ScrollAnimation>
         </div>
         <div className="about__socials">
-          <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrguisher" className="socials-item"><img src={github} alt="github-link" /></a>
-          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mateuszpeciak/" className="socials-item"><img src={linkedin} alt="linkedin-link" /></a>
-          <a target="_blank" rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}assets/CV_Mateusz_Pęciak.pdf`} className="about__text-line">download my <span className="about__bold">Curriculum Vitae</span></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrguisher" className="socials-item socials-item__footer"><img src={github} alt="github-link" /></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/mateuszpeciak/" className="socials-item socials-item__footer"><img src={linkedin} alt="linkedin-link" /></a>
+          <a target="_blank" rel="noopener noreferrer" href={`${process.env.PUBLIC_URL}assets/CV_Mateusz_Peciak.pdf`} className="about__text-line">download my <span className="about__bold">Curriculum Vitae</span></a>
         </div>  
-      </div>
+      </footer>
       <div className="text-small-box">
         <div className="text-small">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
         <div className="text-small">Icons made by <a href="https://www.flaticon.com/authors/linh-pham" title="Linh Pham">Linh Pham</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
