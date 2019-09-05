@@ -1,9 +1,12 @@
-/* main */
+/* autoprefixer grid: autoplace */
 .project {
     background-color: rgb(255, 255, 255);
     box-shadow: -2px -1px 1rem rgba(0, 0, 0, 0.226);
     min-height: 90vh;
+    max-height: 105vh;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: 6fr 2rem 1fr 2rem 3fr 2rem 1fr;
     grid-template-rows: 6fr 1fr 3fr 1fr;
     grid-row-gap: 2rem;
     max-width: 60vw;
@@ -29,7 +32,9 @@
     display: block;
 }
 .project__img-container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 30% 20% 30%;
     grid-template-columns: 30% 20% 30%;
     background-color: rgb(253, 253, 253);
     overflow: hidden;
@@ -71,8 +76,9 @@
     }
     .project {
         max-width: 70vw;
+        -ms-grid-rows: unset;
         grid-template-rows: unset;
-        grid-row-gap: 1rem;
+          grid-row-gap: 1rem;
         padding-bottom: 2rem;
     }
     .project__description {

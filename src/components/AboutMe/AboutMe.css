@@ -1,10 +1,11 @@
-
-/* main */
+/* autoprefixer grid: autoplace */
 .about {
     background-color: rgb(248, 247, 239);
     width: 100vw;
     height: 60vh;
-    display: grid;
+    display: -ms-grid;
+     display: grid;
+    -ms-grid-columns: 30% 2rem 30% 2rem 30%;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap: 2rem;
     align-content: center;
@@ -44,6 +45,9 @@
     align-items: center;
     text-align: center;
 }
+.socials-item__footer {
+    width: 3rem;
+}
 .text-small-box {
     position: absolute;
     bottom: 0;
@@ -60,6 +64,7 @@
 .center-box {
     margin: 2rem;
 }
+
 
 /*  MEDIA QUERIES */
 
@@ -90,4 +95,8 @@
     }
 }
 
-
+@media only screen and (min-width: 1400px) {
+    .about {
+        height: 50vh;
+    }
+}
