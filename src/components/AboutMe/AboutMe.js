@@ -6,7 +6,6 @@ import github from './../../assets/github.svg'
 import linkedin from './../../assets/linkedin2.svg'
 
 import "animate.css/animate.min.css";
-import ScrollAnimation from 'react-animate-on-scroll';
 
 class AboutMe extends Component{
 
@@ -18,10 +17,10 @@ class AboutMe extends Component{
           <img src={photo} alt="" className="about__photo"/>
         </div>
         <div className="center-box">
-          <ScrollAnimation animateOnce="true" animateIn="fadeIn" delay={100}><h2 className="about__heading">Hello</h2></ScrollAnimation>
-          <ScrollAnimation animateOnce="true" animateIn="fadeIn" delay={400}><p className="about__text-line">I'm Mateusz</p></ScrollAnimation>
-          <ScrollAnimation animateOnce="true" animateIn="fadeIn" delay={700}><p className="about__text-line">frontend developer</p></ScrollAnimation>
-          <ScrollAnimation animateOnce="true" animateIn="fadeIn" delay={1000}><p className="about__text-line">feel free to contact me at <span className="about__bold">mrpeciak@gmail.com</span> </p></ScrollAnimation>
+         <h2 className="about__heading">Hello</h2>
+          <p className="about__text-line">I'm Mateusz</p>
+          <p className="about__text-line">frontend developer</p>
+          <p className="about__text-line">feel free to contact me at <span className="about__bold">mrpeciak@gmail.com</span> </p>
         </div>
         <div className="about__socials">
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/mrguisher" className="socials-item socials-item__footer"><img src={github} alt="github-link" /></a>
