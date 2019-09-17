@@ -87,6 +87,6 @@
 }
 @media only screen and (max-width: 600px) {
     .project {
-        min-width: 88vw;
+        max-height: 120vh;
     }
 }
